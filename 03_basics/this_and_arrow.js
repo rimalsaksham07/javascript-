@@ -1,32 +1,38 @@
-const user= {
-    username: "saksham",
-    price: 999,
+// // const user= {
+// //     username: "saksham",
+// //     price: 999,
 
-    welcomeMessage: function(){
-        console.log(`${this.username} , welcome to website`);
-        console.log(this)
-    }
-}
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
-// console.log(user.username)
-// console.log(this)
+// //     welcomeMessage: function(){
+// //         console.log(`${this.username} , welcome to website`);
+// //         console.log(this)
+// //     }
+// // }
+// // // user.welcomeMessage()
+// // // user.username = "sam"
+// // // user.welcomeMessage()
+// // // console.log(user.username)
+// // // console.log(this)
 
-// function chai(){
-//     let username = "saksham"
-//     console.log(this.username);
+// // // function chai(){
+// // //     let username = "saksham"
+// // //     console.log(this.username);
+// // // }
+// // // chai()
+
+// // // const addTwo =(num1 , num2 ) => {
+// // //     return num1 + num2
+// // // }
+// // // console.log(addTwo(2,3))
+
+// // // const addTwo = (num1 , num2) => (num1 + num2)
+
+// // const addTwo  = (num1 , num2) => ({username: "saksham"})
+
+// // console.log(addTwo(3,4))
+
+// const addTwoNUmber = (num1 , num2) => { // this is our arrow function 
+//     return num1 + num2 
 // }
-// chai()
+// console.log(addTwoNUmber(2,3))
 
-// const addTwo =(num1 , num2 ) => {
-//     return num1 + num2
-// }
-// console.log(addTwo(2,3))
-
-// const addTwo = (num1 , num2) => (num1 + num2)
-
-const addTwo  = (num1 , num2) => ({username: "saksham"})
-
-console.log(addTwo(3,4))
 
