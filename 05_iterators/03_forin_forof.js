@@ -75,4 +75,23 @@ for (const key in map) {
 }
 
 
+// for of 
+const arr1 = [1,2,3,4,5]
+for (const items of arr1) {
+    console.log(items);
+}
+
+const greetings1 = "hello world"
+for (const greet of greetings1) {
+    if(greet == " "){
+      continue;
+    }
+    console.log(`Each char is ${greet}`);
+}
+
+// maps 
+// array jastai ho tara iteration ko lagi 
+// map ma chai unique value hunxa duplicate hudena
+
+
 
