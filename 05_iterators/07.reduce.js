@@ -39,5 +39,3 @@ const price_pay = shoppingCart.reduce((acc ,item ) => {
 })
 console.log(price_pay);
 
-
-
