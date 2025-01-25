@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg_color {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class='bg_color'>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // function addLanguage(langName) {
+    //     const li = document.createElement('li'); // Corrected variable name to 'li'
+    //     li.innerHTML = `${langName}`; // Fixed syntax for the string
+    //     document.querySelector('.language').appendChild(li); // Fixed the selector syntax and logic
+    // }
+
+    // addLanguage("Python"); // Added a call to the function with "Python"
+    // addLanguage("Python");
+
+
+    function addOption(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li) 
+    }
+    addOption("python")
+
+    // edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    
+    const newli = document.createElement('li')
+    console.log((newli));
+    
+    newli.textContent = "Mojo"
+    console.log(newli.textContent);
+    
+    secondLang.replaceWith(newli)
+    console.log(newli);
+    
+
+
+
+</script>
+</html>
+
+
