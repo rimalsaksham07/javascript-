@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is code</h1>
+    <button id="start">Start</button><br /><br />
+    <button id="stop">Stop</button>
+    <p id="stopped"></p>
+  </body>
+  <script>
+    // setInterval bhanne ni hunxa
+    const start = document.getElementById("start");
+    const stop = document.getElementById("stop");
+    start.addEventListener("click", function (event) {
+        const setInvervalID = setInterval(function(){
+            console.log("saksham")
+        },2000)
+        stop.addEventListener('click',function(event){
+            clearInterval(setInvervalID)
+            const stopped = document.getElementById('stopped')
+            stopped.innerHTML = "Stopped"
+        })
+    });
+    // clearInterval(intervalId);
+  </script>
+</html>

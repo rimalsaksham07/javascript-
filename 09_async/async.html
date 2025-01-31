@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is code</h1>
+    <button id="stop">Stop</button>
+    <p id="stopped"></p>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Time")
+    // },2000) // eti time bhayepaxi euta kam gardinxa ellee 2 sec paxi time print gardinxa
+    const say = function(){
+        console.log("Saksham");
+    }
+    const changeText = function(){
+        document.querySelector('h1').
+            innerHTML = "Aalu"
+    }
+    const changeMe = setTimeout(changeText , 5000)
+
+    // clearTimeout() yo chai timeout lai hatauna ko lagi used hunxa
+
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        const stopped = document.getElementById('stopped')
+        stopped.innerHTML = "Stopped"
+    })
+
+</script>
+</html>
