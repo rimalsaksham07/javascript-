@@ -99,7 +99,7 @@
 // }
 // getAllUsers()
 
-fetch('https://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users') // fetch ko priority dherai hunxa tei bhayera first ma call hunxa 
 .then((response) => {
     return response.json()
 })
@@ -109,3 +109,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .catch((error) => {
   console.log(error)
 })
+
+// fetch is an exciting feature in js 
+// it is used for web request 
+
+

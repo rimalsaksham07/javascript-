@@ -8,21 +8,17 @@ const randomColor = function () {
   }
   return color;
 };
-
-const startChanginColor = function () {
+ 
+document.querySelector('#start').addEventListener('click', function () {
   if (!intervalID) { // Prevent multiple intervals
     intervalID = setInterval(function () {
       document.body.style.backgroundColor = randomColor();
     }, 1000);
   }
-};
+});
 
-const stopChanginColor = function () {
+document.querySelector('#stop').addEventListener('click', function () {
   clearInterval(intervalID);
   intervalID = null; // Reset the interval ID
-};
-
-// Corrected event listeners
-document.querySelector('#start').addEventListener('click', startChanginColor);
-document.querySelector('#stop').addEventListener('click', stopChanginColor);
+});
 
